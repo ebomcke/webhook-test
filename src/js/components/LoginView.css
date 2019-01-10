@@ -1,0 +1,10 @@
+.login-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-button-container {
+    text-align: center;
+}
