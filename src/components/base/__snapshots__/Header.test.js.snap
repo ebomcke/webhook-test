@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering tests Endpoints link active 1`] = `
+<div
+  className="ui huge secondary stackable menu"
+>
+  <div
+    className="right menu"
+  >
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="active item"
+      onClick={[Function]}
+    >
+      Endpoints
+    </a>
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      Logout
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests Home link active 1`] = `
+<div
+  className="ui huge secondary stackable menu"
+>
+  <div
+    className="right menu"
+  >
+    <a
+      className="active item"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      Endpoints
+    </a>
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      Logout
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests No active link 1`] = `
+<div
+  className="ui huge secondary stackable menu"
+>
+  <div
+    className="right menu"
+  >
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      Endpoints
+    </a>
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      Logout
+    </a>
+  </div>
+</div>
+`;

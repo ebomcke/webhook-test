@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+.login-container {
+  min-height: 100vh;
+  padding-top: 20vh;
+}
+
+.ui.segment.full-height {
+  min-height: calc(100vh - 140px);
+}
+
+.ui.breadcrumb.navigation-breadcrumb {
+  width: 100%;
+  margin-bottom: 2rem;
+}

@@ -1,41 +1,11 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const merge = require('webpack-merge');
+const common = require('./webpack.common.js');
 
-const htmlPlugin = new HtmlWebPackPlugin({
-  template: "./src/index.html",
-  filename: "./index.html"
-});
-
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
-      {
-        test: /\.(s*)css$/,
-        use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader",
-            options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: "[local]",
-              sourceMap: true
-            }
-          },
-          {
-            loader: "sass-loader"
-          }
-        ]
-      }
-    ]
+module.exports = merge(common.config, {
+  mode: 'development',
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
   },
-  plugins: [htmlPlugin]
-};
+  plugins: [common.getDotEnvPlugin('.env.local')]
+});
