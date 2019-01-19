@@ -11,20 +11,9 @@ class AccountEditor extends Component {
     this.state = account;
   }
 
-  handleInputChange = ({ event, name, data }) => {
-    const target = event.target;
-    let value;
-    if (data) {
-      value = data.value;
-    } else {
-      value = target.type === 'checkbox' ? target.checked : target.value;
-    }
-    if (!name) {
-      name = target.name;
-    }
-
+  onOrganisationNameChange = (value) => {
     this.setState({
-      [name]: value,
+      organisationName: value,
     });
   }
 
@@ -44,7 +33,7 @@ class AccountEditor extends Component {
     const { children } = this.props;
     return children({
       account: this.state,
-      handleInputChange: this.handleInputChange,
+      onOrganisationNameChange: this.onOrganisationNameChange,
       save: this.save,
     });
   }

@@ -1,0 +1,299 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interactions tests Clicking on the done button calls onComplete 1`] = `
+<div>
+  <div
+    className="ui fluid steps"
+  >
+    <div
+      className="step"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="title"
+        >
+          item-1 - title
+        </div>
+        <div
+          className="description"
+        >
+          item-1 - description
+        </div>
+      </div>
+    </div>
+    <div
+      className="step"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="title"
+        >
+          item-2 - title
+        </div>
+        <div
+          className="description"
+        >
+          item-2 - description
+        </div>
+      </div>
+    </div>
+    <div
+      className="active step"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="title"
+        >
+          item-3 - title
+        </div>
+        <div
+          className="description"
+        >
+          item-3 - description
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>
+      This is where the content for 
+      item-3
+       goes, below is the next/done button.
+    </p>
+    <div
+      className="field"
+    >
+      <button
+        className="ui button"
+        onClick={[Function]}
+        wizardIdentifier="next-done-button"
+      >
+        Done
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Interactions tests Clicking on the next button shows next step 1`] = `
+<div>
+  <div
+    className="ui fluid steps"
+  >
+    <div
+      className="step"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="title"
+        >
+          item-1 - title
+        </div>
+        <div
+          className="description"
+        >
+          item-1 - description
+        </div>
+      </div>
+    </div>
+    <div
+      className="active step"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="title"
+        >
+          item-2 - title
+        </div>
+        <div
+          className="description"
+        >
+          item-2 - description
+        </div>
+      </div>
+    </div>
+    <div
+      className="disabled step"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="title"
+        >
+          item-3 - title
+        </div>
+        <div
+          className="description"
+        >
+          item-3 - description
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>
+      This is where the content for 
+      item-2
+       goes, below is the next/done button.
+    </p>
+    <div
+      className="field"
+    >
+      <button
+        className="ui button"
+        onClick={[Function]}
+        wizardIdentifier="next-done-button"
+      >
+        Next
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests Multiple steps 1`] = `
+<div>
+  <div
+    className="ui fluid steps"
+  >
+    <div
+      className="active step"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="title"
+        >
+          item-1 - title
+        </div>
+        <div
+          className="description"
+        >
+          item-1 - description
+        </div>
+      </div>
+    </div>
+    <div
+      className="disabled step"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="title"
+        >
+          item-2 - title
+        </div>
+        <div
+          className="description"
+        >
+          item-2 - description
+        </div>
+      </div>
+    </div>
+    <div
+      className="disabled step"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="title"
+        >
+          item-3 - title
+        </div>
+        <div
+          className="description"
+        >
+          item-3 - description
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>
+      This is where the content for 
+      item-1
+       goes, below is the next/done button.
+    </p>
+    <div
+      className="field"
+    >
+      <button
+        className="ui button"
+        onClick={[Function]}
+        wizardIdentifier="next-done-button"
+      >
+        Next
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests Single step 1`] = `
+<div>
+  <div
+    className="ui fluid steps"
+  >
+    <div
+      className="active step"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="title"
+        >
+          test - title
+        </div>
+        <div
+          className="description"
+        >
+          test - description
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>
+      This is where the content for 
+      test
+       goes, below is the next/done button.
+    </p>
+    <div
+      className="field"
+    >
+      <button
+        className="ui button"
+        onClick={[Function]}
+        wizardIdentifier="next-done-button"
+      >
+        Done
+      </button>
+    </div>
+  </div>
+</div>
+`;

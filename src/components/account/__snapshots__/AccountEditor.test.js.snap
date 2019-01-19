@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interactions tests onOrganisationNameChange updates state value 1`] = `
+<div
+  accountEditor={
+    Object {
+      "account": Object {
+        "organisationName": "test-value",
+      },
+      "onOrganisationNameChange": [Function],
+      "save": [Function],
+    }
+  }
+  hasEditor={true}
+/>
+`;
+
+exports[`Rendering tests Child inherits relevant props 1`] = `
+<div
+  accountEditor={
+    Object {
+      "account": Object {},
+      "onOrganisationNameChange": [Function],
+      "save": [Function],
+    }
+  }
+/>
+`;

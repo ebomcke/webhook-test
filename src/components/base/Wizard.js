@@ -34,6 +34,7 @@ class Wizard extends Component {
     const activeStep = steps[this.state.activeStep];
     const nextButton = () => (
       <Form.Button
+        wizardIdentifier='next-done-button'
         onClick={this.nextStep}
         disabled={activeStep.nextDisabled && activeStep.nextDisabled()}
       >

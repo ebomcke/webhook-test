@@ -21,8 +21,8 @@ class NewAccountWizard extends Component {
 
   render() {
     const { accountEditor, endpointEditor } = this.props;
-    const { account, handleInputChange } = accountEditor;
-    const { endpoint, onUrlChange } = endpointEditor;
+    const { account, onOrganisationNameChange } = accountEditor;
+    const { endpoint } = endpointEditor;
     const steps = [
       {
         key: 'organisation',
@@ -50,9 +50,7 @@ class NewAccountWizard extends Component {
                 placeholder="mybrilliantcompany"
                 name="organisationName"
                 value={account.organisationName}
-                onChange={event =>
-                  handleInputChange({ event, name: 'organisationName' })
-                }
+                onChange={(event, data) => onOrganisationNameChange(data.value)}
               />
             </Form.Field>
             {nextButton()}
