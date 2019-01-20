@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering tests With next button 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="required field"
+  >
+    <label>
+      URL
+    </label>
+    <div
+      className="ui labeled input"
+    >
+      <div
+        className="ui label label"
+        onClick={[Function]}
+      >
+        https://webhook-tester-1547141127436.appspot.com/webhook/unit-test-org/
+      </div>
+      <input
+        name="path"
+        onChange={[Function]}
+        placeholder="my/custom/url"
+        type="text"
+        value="unit-test-path"
+      />
+    </div>
+  </div>
+  <div>
+    Next button placeholder
+  </div>
+</form>
+`;
+
+exports[`Rendering tests With url input disabled 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="required field"
+  >
+    <label>
+      URL
+    </label>
+    <div
+      className="ui disabled labeled input"
+    >
+      <div
+        className="ui label label"
+        onClick={[Function]}
+      >
+        https://webhook-tester-1547141127436.appspot.com/webhook/unit-test-org/
+      </div>
+      <input
+        disabled={true}
+        name="path"
+        onChange={[Function]}
+        placeholder="my/custom/url"
+        tabIndex={-1}
+        type="text"
+        value="unit-test-path"
+      />
+    </div>
+  </div>
+  <div>
+    Next button placeholder
+  </div>
+</form>
+`;
+
+exports[`Rendering tests Without next button 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="required field"
+  >
+    <label>
+      URL
+    </label>
+    <div
+      className="ui labeled input"
+    >
+      <div
+        className="ui label label"
+        onClick={[Function]}
+      >
+        https://webhook-tester-1547141127436.appspot.com/webhook/unit-test-org/
+      </div>
+      <input
+        name="path"
+        onChange={[Function]}
+        placeholder="my/custom/url"
+        type="text"
+        value="unit-test-path"
+      />
+    </div>
+  </div>
+</form>
+`;
