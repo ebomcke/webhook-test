@@ -2,8 +2,6 @@ import React from 'react';
 import Wizard from './Wizard';
 import renderer from 'react-test-renderer';
 
-debugger;
-
 const generateStep = key => ({
   key: key,
   title: `${key} - title`,
