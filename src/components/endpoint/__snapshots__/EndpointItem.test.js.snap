@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering tests Response over threshold should be shortened 1`] = `
+<div
+  className="event endpoint-feed-item"
+>
+  <div
+    className="label"
+  >
+    <i
+      aria-hidden="true"
+      className="at icon"
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="summary"
+    >
+      <a
+        name="open-endpoint-link"
+        onClick={[Function]}
+      >
+        unit-test
+      </a>
+      <div
+        className="date"
+      >
+        <div>
+          This is a placeholder for the Timestamp.
+          <pre>
+            <code>
+              {"timestamp":"last-active","prefix":"Last active"}
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <div
+      className="extra"
+    >
+      <p>
+        URL:
+         
+        https://webhook-tester-1547141127436.appspot.com/webhook/unit-test-org/unit-test
+      </p>
+    </div>
+    <div
+      className="text extra"
+    >
+      <div>
+        Response:
+      </div>
+      <div
+        className="ui inverted segment"
+      >
+        <pre>
+          <code>
+            HTTP undefined:
+{
+  "first": "line",
+  "second": "line",
+  "third": "line",
+  "fourth": "line",
+[...]
+}
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div
+      className="meta"
+    >
+      <a
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="remove icon"
+        />
+        Remove
+      </a>
+      <a
+        name="send-test-message-link"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="send icon"
+        />
+        Send test message
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests Response under threshold should be displayed in full 1`] = `
+<div
+  className="event endpoint-feed-item"
+>
+  <div
+    className="label"
+  >
+    <i
+      aria-hidden="true"
+      className="at icon"
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="summary"
+    >
+      <a
+        name="open-endpoint-link"
+        onClick={[Function]}
+      >
+        unit-test
+      </a>
+      <div
+        className="date"
+      >
+        <div>
+          This is a placeholder for the Timestamp.
+          <pre>
+            <code>
+              {"timestamp":"last-active","prefix":"Last active"}
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <div
+      className="extra"
+    >
+      <p>
+        URL:
+         
+        https://webhook-tester-1547141127436.appspot.com/webhook/unit-test-org/unit-test
+      </p>
+    </div>
+    <div
+      className="text extra"
+    >
+      <div>
+        Response:
+      </div>
+      <div
+        className="ui inverted segment"
+      >
+        <pre>
+          <code>
+            HTTP 200:
+{
+  "unitTest": true
+}
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div
+      className="meta"
+    >
+      <a
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="remove icon"
+        />
+        Remove
+      </a>
+      <a
+        name="send-test-message-link"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="send icon"
+        />
+        Send test message
+      </a>
+    </div>
+  </div>
+</div>
+`;

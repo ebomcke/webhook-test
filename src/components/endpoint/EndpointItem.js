@@ -61,7 +61,7 @@ class EndpointItem extends Component {
         </Feed.Label>
         <Feed.Content>
           <Feed.Summary>
-            <a onClick={this.openEndpoint}>{endpoint.path}</a>
+            <a name='open-endpoint-link' onClick={this.openEndpoint}>{endpoint.path}</a>
             <Feed.Date>
               <Timestamp timestamp={endpoint.lastActive} prefix="Last active" />
             </Feed.Date>
@@ -91,7 +91,7 @@ class EndpointItem extends Component {
               open={this.state.testWebhookModalOpen}
               onClose={this.handleClose}
               trigger={
-                <a onClick={this.handleOpen}>
+                <a name="send-test-message-link" onClick={this.handleOpen}>
                   <Icon name="send" />
                   Send test message
                 </a>
