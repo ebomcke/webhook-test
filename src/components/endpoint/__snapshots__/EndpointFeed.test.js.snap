@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering tests Basic 1`] = `
+<div
+  className="ui feed"
+>
+  <button
+    className="ui big button"
+    onClick={[Function]}
+  >
+    <i
+      aria-hidden="true"
+      className="plus icon"
+    />
+    New endpoint
+  </button>
+  <div>
+    This is a placeholder for the endpoint item
+    <pre>
+      <code>
+        {"endpoint":{"id":"endpoint-1","path":"unit-test-1","defaultResponse":{"statusCode":200,"body":"{\\"unitTest\\":true}"}}}
+      </code>
+    </pre>
+  </div>
+  <div>
+    This is a placeholder for the endpoint item
+    <pre>
+      <code>
+        {"endpoint":{"id":"endpoint-2","path":"unit-test-2","defaultResponse":{"statusCode":200,"body":"{\\"unitTest\\":true}"}}}
+      </code>
+    </pre>
+  </div>
+</div>
+`;
