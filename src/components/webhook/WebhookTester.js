@@ -1,10 +1,8 @@
-import React, { Component, Suspense } from 'react';
-import { Form, Button, Segment, Dimmer, Loader } from 'semantic-ui-react';
+import React, { Component } from 'react';
+import { Form, Button } from 'semantic-ui-react';
 import { compose } from 'recompose';
 import { withAccount } from '../../contexts/Account';
-const JsonEditor = React.lazy(() =>
-  import(/* webpackChunkName: "JsonEditor" */ '../base/JsonEditor'),
-);
+import JsonEditor from '../base/JsonEditor';
 import EndpointChooser from '../endpoint/EndpointChooser';
 
 class WebhookTester extends Component {
@@ -80,23 +78,11 @@ class WebhookTester extends Component {
         )}
         <Form.Field>
           <label>Body</label>
-          <Suspense
-            fallback={
-              <Segment>
-                <Dimmer active inverted>
-                  <Loader size="big" inverted>
-                    Loading
-                  </Loader>
-                </Dimmer>
-              </Segment>
-            }
-          >
-            <JsonEditor
-              height="300px"
-              value={this.state.body}
-              onChange={this.handleJsonInputChange}
-            />
-          </Suspense>
+          <JsonEditor
+            height="300px"
+            value={this.state.body}
+            onChange={this.handleJsonInputChange}
+          />
         </Form.Field>
         <Button
           onClick={this.sendMessage}

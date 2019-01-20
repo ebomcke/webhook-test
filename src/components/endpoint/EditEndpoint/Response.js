@@ -1,8 +1,6 @@
-import React, { Suspense } from 'react';
-import { Form, Message, Icon, Loader, Dimmer, Segment } from 'semantic-ui-react';
-const JsonEditor = React.lazy(() =>
-  import(/* webpackChunkName: "JsonEditor" */ '../../base/JsonEditor'),
-);
+import React from 'react';
+import { Form, Message, Icon } from 'semantic-ui-react';
+import JsonEditor from '../../base/JsonEditor';
 
 const Response = ({ endpointEditor, nextButton, renderMessage }) => (
   <div>
@@ -36,23 +34,11 @@ const Response = ({ endpointEditor, nextButton, renderMessage }) => (
       </Form.Field>
       <Form.Field>
         <label>Response body</label>
-        <Suspense
-          fallback={
-            <Segment>
-              <Dimmer active inverted>
-                <Loader size="big" inverted>
-                  Loading
-                </Loader>
-              </Dimmer>
-            </Segment>
-          }
-        >
-          <JsonEditor
-            height="300px"
-            value={endpointEditor.endpoint.defaultResponseBody}
-            onChange={endpointEditor.onResponseBodyChange}
-          />
-        </Suspense>
+        <JsonEditor
+          height="300px"
+          value={endpointEditor.endpoint.defaultResponseBody}
+          onChange={endpointEditor.onResponseBodyChange}
+        />
       </Form.Field>
       {nextButton()}
     </Form>
