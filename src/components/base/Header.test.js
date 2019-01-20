@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header';
 import renderer from 'react-test-renderer';
+import Header from './Header';
 
 describe('Rendering tests', () => {
   test('No active link', () => {

@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering tests With info message 1`] = `
+<div>
+  <div
+    className="ui icon message"
+  >
+    <i
+      aria-hidden="true"
+      className="help icon"
+    />
+    <div
+      className="content"
+    >
+      <div
+        className="header"
+      >
+        This is optional
+      </div>
+      <p>
+        If you're not sure what the default response should be you can safely leave this default value.
+      </p>
+    </div>
+  </div>
+  <form
+    className="ui form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field"
+    >
+      <div
+        className="field"
+      >
+        <label>
+          Status code
+        </label>
+        <div
+          aria-expanded={false}
+          className="ui fluid selection dropdown"
+          name="defaultResponseStatusCode"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          role="listbox"
+          tabIndex={0}
+        >
+          <div
+            aria-live="polite"
+            className="text"
+            role="alert"
+          >
+            200 - OK
+          </div>
+          <i
+            aria-hidden="true"
+            className="dropdown icon"
+            onClick={[Function]}
+          />
+          <div
+            className="menu transition"
+          >
+            <div
+              aria-checked={true}
+              aria-selected={true}
+              className="active selected item"
+              onClick={[Function]}
+              role="option"
+              style={
+                Object {
+                  "pointerEvents": "all",
+                }
+              }
+            >
+              <span
+                className="text"
+              >
+                200 - OK
+              </span>
+            </div>
+            <div
+              aria-checked={false}
+              aria-selected={false}
+              className="item"
+              onClick={[Function]}
+              role="option"
+              style={
+                Object {
+                  "pointerEvents": "all",
+                }
+              }
+            >
+              <span
+                className="text"
+              >
+                201 - Created
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <label>
+        Response body
+      </label>
+      <div>
+        This is a placeholder for the JSON editor.
+        <pre>
+          <code>
+            {"height":"300px","value":"{\\"status\\":\\"OK\\"}"}
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      Next button placeholder
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Rendering tests Without info message 1`] = `
+<div>
+  <form
+    className="ui form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field"
+    >
+      <div
+        className="field"
+      >
+        <label>
+          Status code
+        </label>
+        <div
+          aria-expanded={false}
+          className="ui fluid selection dropdown"
+          name="defaultResponseStatusCode"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          role="listbox"
+          tabIndex={0}
+        >
+          <div
+            aria-live="polite"
+            className="text"
+            role="alert"
+          >
+            200 - OK
+          </div>
+          <i
+            aria-hidden="true"
+            className="dropdown icon"
+            onClick={[Function]}
+          />
+          <div
+            className="menu transition"
+          >
+            <div
+              aria-checked={true}
+              aria-selected={true}
+              className="active selected item"
+              onClick={[Function]}
+              role="option"
+              style={
+                Object {
+                  "pointerEvents": "all",
+                }
+              }
+            >
+              <span
+                className="text"
+              >
+                200 - OK
+              </span>
+            </div>
+            <div
+              aria-checked={false}
+              aria-selected={false}
+              className="item"
+              onClick={[Function]}
+              role="option"
+              style={
+                Object {
+                  "pointerEvents": "all",
+                }
+              }
+            >
+              <span
+                className="text"
+              >
+                201 - Created
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <label>
+        Response body
+      </label>
+      <div>
+        This is a placeholder for the JSON editor.
+        <pre>
+          <code>
+            {"height":"300px","value":"{\\"status\\":\\"OK\\"}"}
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      Next button placeholder
+    </div>
+  </form>
+</div>
+`;
