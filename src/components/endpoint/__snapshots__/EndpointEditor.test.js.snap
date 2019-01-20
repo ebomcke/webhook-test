@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interactions tests onResponseBodyChange updates state value 1`] = `
+<div
+  endpointEditor={
+    Object {
+      "endpoint": Object {
+        "defaultResponseBody": "{\\"newBody\\":\\"true\\"}",
+        "defaultResponseStatusCode": 200,
+        "id": undefined,
+        "path": "",
+      },
+      "onResponseBodyChange": [Function],
+      "onStatusCodeChange": [Function],
+      "onUrlChange": [Function],
+      "save": [Function],
+    }
+  }
+  hasEditor={true}
+/>
+`;
+
+exports[`Interactions tests onResponseBodyChange validates JSON before updating state 1`] = `
+<div
+  endpointEditor={
+    Object {
+      "endpoint": Object {
+        "defaultResponseBody": "{
+  \\"status\\": \\"OK\\"
+}",
+        "defaultResponseStatusCode": 200,
+        "id": undefined,
+        "path": "",
+      },
+      "onResponseBodyChange": [Function],
+      "onStatusCodeChange": [Function],
+      "onUrlChange": [Function],
+      "save": [Function],
+    }
+  }
+  hasEditor={true}
+/>
+`;
+
+exports[`Interactions tests onStatusCodeChange updates state value 1`] = `
+<div
+  endpointEditor={
+    Object {
+      "endpoint": Object {
+        "defaultResponseBody": "{
+  \\"status\\": \\"OK\\"
+}",
+        "defaultResponseStatusCode": 418,
+        "id": undefined,
+        "path": "",
+      },
+      "onResponseBodyChange": [Function],
+      "onStatusCodeChange": [Function],
+      "onUrlChange": [Function],
+      "save": [Function],
+    }
+  }
+  hasEditor={true}
+/>
+`;
+
+exports[`Interactions tests onUrlChange updates state value 1`] = `
+<div
+  endpointEditor={
+    Object {
+      "endpoint": Object {
+        "defaultResponseBody": "{
+  \\"status\\": \\"OK\\"
+}",
+        "defaultResponseStatusCode": 200,
+        "id": undefined,
+        "path": "new-url-value",
+      },
+      "onResponseBodyChange": [Function],
+      "onStatusCodeChange": [Function],
+      "onUrlChange": [Function],
+      "save": [Function],
+    }
+  }
+  hasEditor={true}
+/>
+`;
+
+exports[`Interactions tests onUrlChange validates url before updating state 1`] = `
+<div
+  endpointEditor={
+    Object {
+      "endpoint": Object {
+        "defaultResponseBody": "{
+  \\"status\\": \\"OK\\"
+}",
+        "defaultResponseStatusCode": 200,
+        "id": undefined,
+        "path": "newurlvalue",
+      },
+      "onResponseBodyChange": [Function],
+      "onStatusCodeChange": [Function],
+      "onUrlChange": [Function],
+      "save": [Function],
+    }
+  }
+  hasEditor={true}
+/>
+`;
+
+exports[`Rendering tests Existing endpoint 1`] = `
+<div
+  endpointEditor={
+    Object {
+      "endpoint": Object {
+        "defaultResponseBody": "{\\"unitTest\\":\\"true\\"}",
+        "defaultResponseStatusCode": 418,
+        "id": "existing-endpoint",
+        "path": "existing-endpoint-path",
+      },
+      "onResponseBodyChange": [Function],
+      "onStatusCodeChange": [Function],
+      "onUrlChange": [Function],
+      "save": [Function],
+    }
+  }
+/>
+`;
+
+exports[`Rendering tests New endpoint 1`] = `
+<div
+  endpointEditor={
+    Object {
+      "endpoint": Object {
+        "defaultResponseBody": "{
+  \\"status\\": \\"OK\\"
+}",
+        "defaultResponseStatusCode": 200,
+        "id": undefined,
+        "path": "",
+      },
+      "onResponseBodyChange": [Function],
+      "onStatusCodeChange": [Function],
+      "onUrlChange": [Function],
+      "save": [Function],
+    }
+  }
+/>
+`;
