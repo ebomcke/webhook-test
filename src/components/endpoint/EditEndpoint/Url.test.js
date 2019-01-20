@@ -4,14 +4,9 @@ import Url from './Url';
 
 const endpointEditor = {
   onUrlChange: jest.fn(),
-  onResponseBodyChange: jest.fn(),
   endpoint: {
     path: 'unit-test-path',
   },
-};
-
-const account = {
-  organisationName: 'unit-test-org',
 };
 
 const nextButton = () => <div>Next button placeholder</div>;
@@ -20,7 +15,6 @@ describe('Rendering tests', () => {
   test('Without next button', () => {
     const url = create(
       <Url
-        account={account}
         endpointEditor={endpointEditor}
         nextButton={false}
       />,
@@ -31,7 +25,6 @@ describe('Rendering tests', () => {
   test('With next button', () => {
     const url = create(
       <Url
-        account={account}
         endpointEditor={endpointEditor}
         nextButton={nextButton}
       />,
@@ -42,7 +35,6 @@ describe('Rendering tests', () => {
   test('With url input disabled', () => {
     const url = create(
       <Url
-        account={account}
         endpointEditor={endpointEditor}
         nextButton={nextButton}
         disabled={true}
@@ -55,7 +47,6 @@ describe('Rendering tests', () => {
 describe('Interactions tests', () => {
   const url = create(
     <Url
-      account={account}
       endpointEditor={endpointEditor}
       nextButton={nextButton}
       disabled={true}

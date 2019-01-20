@@ -7,12 +7,14 @@ const EditEndpoint = ({ endpointEditor }) => (
   <div>
     <Header as="h1">Edit endpoint</Header>
     <Url endpointEditor={endpointEditor} disabled={true} />
-    <p></p>
+    <p />
     <Response
       renderMessage={false}
       endpointEditor={endpointEditor}
       nextButton={() => (
-        <Form.Button onClick={endpointEditor.save}>Save</Form.Button>
+        <Form.Button name="endpoint-editor-save" onClick={endpointEditor.save}>
+          Save
+        </Form.Button>
       )}
     />
   </div>

@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering tests Basic 1`] = `
+<div>
+  <h1
+    className="ui header"
+  >
+    Edit endpoint
+  </h1>
+  <form
+    className="ui form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="required field"
+    >
+      <label>
+        URL
+      </label>
+      <div
+        className="ui disabled labeled input"
+      >
+        <div
+          className="ui label label"
+          onClick={[Function]}
+        >
+          https://webhook-tester-1547141127436.appspot.com/webhook/unit-test-org/
+        </div>
+        <input
+          disabled={true}
+          name="path"
+          onChange={[Function]}
+          placeholder="my/custom/url"
+          tabIndex={-1}
+          type="text"
+          value="unit-test-path"
+        />
+      </div>
+    </div>
+  </form>
+  <p />
+  <div>
+    <form
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="field"
+      >
+        <div
+          className="field"
+        >
+          <label>
+            Status code
+          </label>
+          <div
+            aria-expanded={false}
+            className="ui fluid selection dropdown"
+            name="defaultResponseStatusCode"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="listbox"
+            tabIndex={0}
+          >
+            <div
+              aria-live="polite"
+              className="text"
+              role="alert"
+            >
+              200 - OK
+            </div>
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+            >
+              <div
+                aria-checked={true}
+                aria-selected={true}
+                className="active selected item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  200 - OK
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  201 - Created
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="field"
+      >
+        <label>
+          Response body
+        </label>
+        <div>
+          This is a placeholder for the JSON editor.
+          <pre>
+            <code>
+              {"height":"300px","value":"{\\"status\\":\\"OK\\"}"}
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div
+        className="field"
+      >
+        <button
+          className="ui button"
+          name="endpoint-editor-save"
+          onClick={[Function]}
+        >
+          Save
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

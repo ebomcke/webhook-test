@@ -4,9 +4,8 @@ import renderer from 'react-test-renderer';
 
 describe('Rendering tests', () => {
   test('Child inherits relevant props', () => {
-    const account = {};
     const accountEditor = renderer.create(
-      <AccountEditor account={account}>
+      <AccountEditor>
         {accountEditor => <div accountEditor={accountEditor} />}
       </AccountEditor>,
     );
@@ -17,14 +16,13 @@ describe('Rendering tests', () => {
 
 describe('Interactions tests', () => {
   test('onOrganisationNameChange updates state value', () => {
-    const account = {};
     const accountEditor = renderer.create(
-      <AccountEditor account={account}>
+      <AccountEditor>
         {accountEditor => <div hasEditor={true} accountEditor={accountEditor} />}
       </AccountEditor>,
     );
 
-    accountEditor.root.children[0].props.accountEditor.onOrganisationNameChange('test-value');
+    accountEditor.root.findByProps({hasEditor:true}).props.accountEditor.onOrganisationNameChange('test-value');
     let tree = accountEditor.toJSON();
     expect(tree).toMatchSnapshot();
   });

@@ -19,7 +19,9 @@ exports[`Rendering tests Child inherits relevant props 1`] = `
 <div
   accountEditor={
     Object {
-      "account": Object {},
+      "account": Object {
+        "organisationName": "unit-test-org",
+      },
       "onOrganisationNameChange": [Function],
       "save": [Function],
     }
