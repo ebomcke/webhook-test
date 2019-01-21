@@ -1,0 +1,407 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interactions tests Add item adds a content filter and preserves existing filters 1`] = `
+Array [
+  Object {
+    "type": "path",
+    "value": "unit-test-1",
+  },
+  Object {
+    "type": "content",
+    "value": "unit-test",
+  },
+  Object {
+    "type": "content",
+    "value": "new-filter",
+  },
+]
+`;
+
+exports[`Interactions tests Remove content updates filters 1`] = `
+Array [
+  Object {
+    "type": "path",
+    "value": "unit-test-1",
+  },
+]
+`;
+
+exports[`Interactions tests Remove endpoint updates filters 1`] = `
+Array [
+  Object {
+    "type": "content",
+    "value": "unit-test",
+  },
+]
+`;
+
+exports[`Interactions tests Select endpoint adds an endpoint filter and preserves content filters only 1`] = `
+Array [
+  Object {
+    "type": "path",
+    "value": "unit-test-2",
+  },
+  Object {
+    "type": "content",
+    "value": "unit-test",
+  },
+]
+`;
+
+exports[`Rendering tests Both filters 1`] = `
+<div
+  aria-expanded={false}
+  className="ui fluid multiple search selection dropdown"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="combobox"
+>
+  <a
+    className="ui label"
+    onClick={[Function]}
+    value="endpoint-1"
+  >
+    url: /unit-test-1
+    <i
+      aria-hidden="true"
+      className="delete icon"
+      onClick={[Function]}
+    />
+  </a>
+  <a
+    className="ui label"
+    onClick={[Function]}
+    value="unit-test"
+  >
+    content: unit-test
+    <i
+      aria-hidden="true"
+      className="delete icon"
+      onClick={[Function]}
+    />
+  </a>
+  <input
+    aria-autocomplete="list"
+    autoComplete="off"
+    className="search"
+    onChange={[Function]}
+    style={
+      Object {
+        "width": undefined,
+      }
+    }
+    tabIndex={0}
+    type="text"
+    value=""
+  />
+  <span
+    className="sizer"
+  />
+  <div
+    aria-live="polite"
+    className="text"
+    role="alert"
+  />
+  <i
+    aria-hidden="true"
+    className="search icon"
+    onClick={[Function]}
+  />
+  <div
+    aria-multiselectable={true}
+    className="menu transition"
+    role="listbox"
+  >
+    <div
+      aria-checked={false}
+      aria-selected={true}
+      className="selected item"
+      filtervalue="unit-test-2"
+      onClick={[Function]}
+      role="option"
+      style={
+        Object {
+          "pointerEvents": "all",
+        }
+      }
+      type="path"
+    >
+      <span
+        className="text"
+      >
+        url: /unit-test-2
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests Content filter 1`] = `
+<div
+  aria-expanded={false}
+  className="ui fluid multiple search selection dropdown"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="combobox"
+>
+  <a
+    className="ui label"
+    onClick={[Function]}
+    value="unit-test"
+  >
+    content: unit-test
+    <i
+      aria-hidden="true"
+      className="delete icon"
+      onClick={[Function]}
+    />
+  </a>
+  <input
+    aria-autocomplete="list"
+    autoComplete="off"
+    className="search"
+    onChange={[Function]}
+    style={
+      Object {
+        "width": undefined,
+      }
+    }
+    tabIndex={0}
+    type="text"
+    value=""
+  />
+  <span
+    className="sizer"
+  />
+  <div
+    aria-live="polite"
+    className="text"
+    role="alert"
+  />
+  <i
+    aria-hidden="true"
+    className="search icon"
+    onClick={[Function]}
+  />
+  <div
+    aria-multiselectable={true}
+    className="menu transition"
+    role="listbox"
+  >
+    <div
+      aria-checked={false}
+      aria-selected={true}
+      className="selected item"
+      filtervalue="unit-test-1"
+      onClick={[Function]}
+      role="option"
+      style={
+        Object {
+          "pointerEvents": "all",
+        }
+      }
+      type="path"
+    >
+      <span
+        className="text"
+      >
+        url: /unit-test-1
+      </span>
+    </div>
+    <div
+      aria-checked={false}
+      aria-selected={false}
+      className="item"
+      filtervalue="unit-test-2"
+      onClick={[Function]}
+      role="option"
+      style={
+        Object {
+          "pointerEvents": "all",
+        }
+      }
+      type="path"
+    >
+      <span
+        className="text"
+      >
+        url: /unit-test-2
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests No filters 1`] = `
+<div
+  aria-expanded={false}
+  className="ui fluid multiple search selection dropdown"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="combobox"
+>
+  <input
+    aria-autocomplete="list"
+    autoComplete="off"
+    className="search"
+    onChange={[Function]}
+    style={
+      Object {
+        "width": undefined,
+      }
+    }
+    tabIndex={0}
+    type="text"
+    value=""
+  />
+  <span
+    className="sizer"
+  />
+  <div
+    aria-live="polite"
+    className="default text"
+    role="alert"
+  >
+    Filter by content and/or url
+  </div>
+  <i
+    aria-hidden="true"
+    className="search icon"
+    onClick={[Function]}
+  />
+  <div
+    aria-multiselectable={true}
+    className="menu transition"
+    role="listbox"
+  >
+    <div
+      aria-checked={false}
+      aria-selected={true}
+      className="selected item"
+      filtervalue="unit-test-1"
+      onClick={[Function]}
+      role="option"
+      style={
+        Object {
+          "pointerEvents": "all",
+        }
+      }
+      type="path"
+    >
+      <span
+        className="text"
+      >
+        url: /unit-test-1
+      </span>
+    </div>
+    <div
+      aria-checked={false}
+      aria-selected={false}
+      className="item"
+      filtervalue="unit-test-2"
+      onClick={[Function]}
+      role="option"
+      style={
+        Object {
+          "pointerEvents": "all",
+        }
+      }
+      type="path"
+    >
+      <span
+        className="text"
+      >
+        url: /unit-test-2
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests Path filter 1`] = `
+<div
+  aria-expanded={false}
+  className="ui fluid multiple search selection dropdown"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="combobox"
+>
+  <a
+    className="ui label"
+    onClick={[Function]}
+    value="endpoint-1"
+  >
+    url: /unit-test-1
+    <i
+      aria-hidden="true"
+      className="delete icon"
+      onClick={[Function]}
+    />
+  </a>
+  <input
+    aria-autocomplete="list"
+    autoComplete="off"
+    className="search"
+    onChange={[Function]}
+    style={
+      Object {
+        "width": undefined,
+      }
+    }
+    tabIndex={0}
+    type="text"
+    value=""
+  />
+  <span
+    className="sizer"
+  />
+  <div
+    aria-live="polite"
+    className="text"
+    role="alert"
+  />
+  <i
+    aria-hidden="true"
+    className="search icon"
+    onClick={[Function]}
+  />
+  <div
+    aria-multiselectable={true}
+    className="menu transition"
+    role="listbox"
+  >
+    <div
+      aria-checked={false}
+      aria-selected={true}
+      className="selected item"
+      filtervalue="unit-test-2"
+      onClick={[Function]}
+      role="option"
+      style={
+        Object {
+          "pointerEvents": "all",
+        }
+      }
+      type="path"
+    >
+      <span
+        className="text"
+      >
+        url: /unit-test-2
+      </span>
+    </div>
+  </div>
+</div>
+`;

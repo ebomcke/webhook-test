@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { compose } from 'recompose';
 import { withEndpoints } from '../../contexts/Endpoints';
-import { Dropdown, Label, LabelDetail, Icon, Segment } from 'semantic-ui-react';
+import { Dropdown } from 'semantic-ui-react';
 
 class SearchDropdown extends Component {
   constructor(props) {
