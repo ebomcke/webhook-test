@@ -278,6 +278,7 @@ exports[`Rendering tests Initial rendering - populated list 1`] = `
             className="meta"
           >
             <a
+              name="delete-webhook-link"
               onClick={[Function]}
             >
               <i
@@ -343,6 +344,7 @@ exports[`Rendering tests Initial rendering - populated list 1`] = `
             className="meta"
           >
             <a
+              name="delete-webhook-link"
               onClick={[Function]}
             >
               <i

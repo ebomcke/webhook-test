@@ -18,12 +18,9 @@ class WebhookTester extends Component {
       ),
       endpoint: props.endpoint,
     };
-    this.sendMessage = this.sendMessage.bind(this);
-    this.handleEndpointSelect = this.handleEndpointSelect.bind(this);
-    this.handleJsonInputChange = this.handleJsonInputChange.bind(this);
   }
 
-  async sendMessage() {
+  sendMessage = async () => {
     const { account, onComplete } = this.props;
     this.setState({ isLoading: true });
     try {
@@ -51,13 +48,13 @@ class WebhookTester extends Component {
     }
   }
 
-  handleEndpointSelect(endpoint) {
+  handleEndpointSelect = (endpoint) => {
     this.setState({
       endpoint: endpoint,
     });
   }
 
-  handleJsonInputChange(value) {
+  handleJsonInputChange = (value) => {
     try {
       JSON.parse(value);
       this.setState({
