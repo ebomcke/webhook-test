@@ -18,7 +18,11 @@ const endpoints = [{
 
 export const withEndpoints = jest.fn(Component => props => {
   if (props.endpoints) {
-    return Component;
+    return (
+      <Component
+        {...props}
+      />
+    );
   }
   return (
     <Component
