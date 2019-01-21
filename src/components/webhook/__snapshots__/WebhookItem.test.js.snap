@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering tests Initial rendering - full body 1`] = `
+<div
+  className="event"
+>
+  <div
+    className="label"
+  >
+    <i
+      aria-hidden="true"
+      className="code icon"
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="summary"
+    >
+      /unit-test-org/webhook-path-1
+      <div
+        className="date"
+      >
+        <div>
+          This is a placeholder for the Timestamp.
+          <pre>
+            <code>
+              {"timestamp":"webhook-date-1","prefix":"Received"}
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <div
+      className="text extra"
+    >
+      <div
+        className="ui inverted segment"
+      >
+        <pre>
+          <code>
+            {
+  "unitTest": true
+}
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div
+      className="meta"
+    >
+      <a
+        name="delete-webhook-link"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="remove icon"
+        />
+        Remove
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests Initial rendering - shortened body 1`] = `
+<div
+  className="event"
+>
+  <div
+    className="label"
+  >
+    <i
+      aria-hidden="true"
+      className="code icon"
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="summary"
+    >
+      /unit-test-org/webhook-path-2
+      <div
+        className="date"
+      >
+        <div>
+          This is a placeholder for the Timestamp.
+          <pre>
+            <code>
+              {"timestamp":"webhook-date-2","prefix":"Received"}
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <div
+      className="text extra"
+    >
+      <div
+        className="ui inverted segment"
+      >
+        <pre>
+          <code>
+            {
+  "unitTest": true,
+  "first": "line",
+  "second": "line",
+  "third": "line",
+[...]
+}
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div
+      className="meta"
+    >
+      <a
+        name="delete-webhook-link"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="remove icon"
+        />
+        Remove
+      </a>
+    </div>
+  </div>
+</div>
+`;

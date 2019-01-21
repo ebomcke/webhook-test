@@ -329,7 +329,11 @@ exports[`Rendering tests Initial rendering - populated list 1`] = `
               <pre>
                 <code>
                   {
-  "unitTest": true
+  "unitTest": true,
+  "first": "line",
+  "second": "line",
+  "third": "line",
+[...]
 }
                 </code>
               </pre>

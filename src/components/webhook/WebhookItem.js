@@ -73,7 +73,7 @@ class WebhookItem extends Component {
             </Modal>
           </Feed.Extra>
           <Feed.Meta>
-            <a onClick={this.deleteWebhook}>
+            <a name='delete-webhook-link' onClick={this.deleteWebhook}>
               <Icon name="remove" />
               Remove
             </a>
