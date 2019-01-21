@@ -9,7 +9,7 @@ class Wizard extends Component {
     };
   }
 
-  nextStep = () => {
+  nextStep = async () => {
     const { steps, onComplete } = this.props;
     const activeStep = this.state.activeStep;
     if (activeStep < steps.length - 1) {
@@ -17,7 +17,7 @@ class Wizard extends Component {
         activeStep: activeStep + 1,
       });
     } else {
-      onComplete();
+      await onComplete();
     }
   }
 

@@ -1,0 +1,435 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering tests Step 1 - endpoint url 1`] = `
+<div
+  className="ui segment full-height"
+>
+  <h1
+    className="ui header"
+  >
+    New endpoint
+  </h1>
+  <div>
+    <div
+      className="ui fluid steps"
+    >
+      <div
+        className="active step"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="at icon"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="title"
+          >
+            URL
+          </div>
+          <div
+            className="description"
+          >
+            Choose a URL
+          </div>
+        </div>
+      </div>
+      <div
+        className="disabled step"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="code icon"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="title"
+          >
+            Response
+          </div>
+          <div
+            className="description"
+          >
+            Set the default response
+          </div>
+        </div>
+      </div>
+      <div
+        className="disabled step"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="title"
+          >
+            You're done
+          </div>
+        </div>
+      </div>
+    </div>
+    <form
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="required field"
+      >
+        <label>
+          URL
+        </label>
+        <div
+          className="ui labeled input"
+        >
+          <div
+            className="ui label label"
+            onClick={[Function]}
+          >
+            https://webhook-tester-1547141127436.appspot.com/webhook/unit-test-org/
+          </div>
+          <input
+            name="path"
+            onChange={[Function]}
+            placeholder="my/custom/url"
+            type="text"
+            value="unit-test-path"
+          />
+        </div>
+      </div>
+      <div
+        className="field"
+      >
+        <button
+          className="ui button"
+          onClick={[Function]}
+          wizardIdentifier="next-done-button"
+        >
+          Next
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests Step 2 - default response 1`] = `
+<div
+  className="ui segment full-height"
+>
+  <h1
+    className="ui header"
+  >
+    New endpoint
+  </h1>
+  <div>
+    <div
+      className="ui fluid steps"
+    >
+      <div
+        className="step"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="at icon"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="title"
+          >
+            URL
+          </div>
+          <div
+            className="description"
+          >
+            Choose a URL
+          </div>
+        </div>
+      </div>
+      <div
+        className="active step"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="code icon"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="title"
+          >
+            Response
+          </div>
+          <div
+            className="description"
+          >
+            Set the default response
+          </div>
+        </div>
+      </div>
+      <div
+        className="disabled step"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="title"
+          >
+            You're done
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="ui icon message"
+      >
+        <i
+          aria-hidden="true"
+          className="help icon"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            This is optional
+          </div>
+          <p>
+            If you're not sure what the default response should be you can safely leave this default value.
+          </p>
+        </div>
+      </div>
+      <form
+        className="ui form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="field"
+          >
+            <label>
+              Status code
+            </label>
+            <div
+              aria-expanded={false}
+              className="ui fluid selection dropdown"
+              name="defaultResponseStatusCode"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseDown={[Function]}
+              role="listbox"
+              tabIndex={0}
+            >
+              <div
+                aria-live="polite"
+                className="text"
+                role="alert"
+              />
+              <i
+                aria-hidden="true"
+                className="dropdown icon"
+                onClick={[Function]}
+              />
+              <div
+                className="menu transition"
+              >
+                <div
+                  aria-checked={false}
+                  aria-selected={true}
+                  className="selected item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    200 - OK
+                  </span>
+                </div>
+                <div
+                  aria-checked={false}
+                  aria-selected={false}
+                  className="item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    201 - Created
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            Response body
+          </label>
+          <div>
+            This is a placeholder for the JSON editor.
+            <pre>
+              <code>
+                {"height":"300px"}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div
+          className="field"
+        >
+          <button
+            className="ui button"
+            onClick={[Function]}
+            wizardIdentifier="next-done-button"
+          >
+            Next
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Rendering tests Step 3 - done 1`] = `
+<div
+  className="ui segment full-height"
+>
+  <h1
+    className="ui header"
+  >
+    New endpoint
+  </h1>
+  <div>
+    <div
+      className="ui fluid steps"
+    >
+      <div
+        className="step"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="at icon"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="title"
+          >
+            URL
+          </div>
+          <div
+            className="description"
+          >
+            Choose a URL
+          </div>
+        </div>
+      </div>
+      <div
+        className="step"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="code icon"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="title"
+          >
+            Response
+          </div>
+          <div
+            className="description"
+          >
+            Set the default response
+          </div>
+        </div>
+      </div>
+      <div
+        className="active step"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="title"
+          >
+            You're done
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="ui icon positive message"
+      >
+        <i
+          aria-hidden="true"
+          className="checkmark icon"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            Congratulations !
+          </div>
+          <p>
+            You are now ready to receive your first webhook.
+          </p>
+        </div>
+      </div>
+      <div
+        className="field"
+      >
+        <button
+          className="ui button"
+          onClick={[Function]}
+          wizardIdentifier="next-done-button"
+        >
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

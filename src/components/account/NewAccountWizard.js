@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment, Header, Icon, Message, Form, Input } from 'semantic-ui-react';
+import { Segment, Header, Icon, Message, Form } from 'semantic-ui-react';
 import { compose } from 'recompose';
 import { withNavigation } from '../../contexts/Navigation';
 import Wizard from '../base/Wizard';
